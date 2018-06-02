@@ -1,0 +1,45 @@
+.nav{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    position: fixed;
+    z-index: 100000;
+    align-items: center;
+    &__logo{
+        margin-left: 2rem;
+    }
+    
+    &__items{
+        margin-left: auto;
+        margin-right: 1rem;
+        & a{
+            text-decoration: none;
+            color: $color-grey-light;
+            text-transform: uppercase;
+            font-family: $main-title-font;
+            text-decoration-color: $color-blue-dark;
+            transition: all 1s;
+
+            &:hover{
+                text-decoration: line-through;
+            }
+
+            &:not(:last-child){
+                margin-right: .8rem;
+            }
+        }
+    }
+
+    &__social{
+        margin-right: 2rem;
+        & svg {
+            fill: $main-title-font;
+            height: 1rem;
+            width: 1rem;
+            cursor: pointer;
+            &:not(:last-child){
+                margin-right: .6rem;
+            }
+        }
+    }
+}

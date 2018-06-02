@@ -1,0 +1,87 @@
+.landing{
+    height: 100vw;
+
+    &__bg-circle{
+        &--1{
+            z-index: 10;
+            position: absolute;
+            top: 37%;
+            left: -5%;
+            width: 10rem;
+            height: 10rem;
+            background: #B3FFAB;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top left, #1169b6, #1badd7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top left, #1169b6, #1badd7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border-radius: 100%;
+        }
+
+        &--2{
+            z-index: 10;
+            position: absolute;
+            top: 60%;
+            left: 8%;
+            width: 3rem;
+            height: 3rem;
+            background: #6aff7f;
+            border-radius: 100%;
+        }
+
+
+    }
+
+    &__title {
+        z-index: 10000;
+        position: absolute;
+        top: 47%;
+        left: 20%;
+        transform: translateY(-50%);
+        &--sub{
+            font-family: $main-title-font;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+            color: $color-white;
+            width: 33rem;
+            letter-spacing: .5rem;
+            background-color: $color-blue-dark;
+            height: 100%;
+            padding-left: .5rem;
+            display: flex;
+            align-items: center;
+            & span{
+                width: 76%;
+                display: block;
+            }
+            &-brick{
+                &-1{
+                    height: 2.4rem;
+                    width: 3%;
+                    background-color: $color-blue-neon;
+                }
+                &-2{
+                    height: 2.4rem;
+                    width: 21%;
+                    background-color: $color-green-neon;
+                }
+            }
+        }
+
+        &--main{
+            font-family: $main-title-font;
+            font-weight: 900;
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background: linear-gradient(to right, #1b2550 33%, #33cbcc 33%, #33cbcc 66%, #6aff7f 66%);
+    position: absolute;
+    top: 77%;
+    left: 101%;
+}

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,700,900|Roboto:400,500");
+html {
+  font-size: 70%; }
+
+body {
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.landing {
+  height: 100vw; }
+  .landing__bg-circle--1 {
+    z-index: 10;
+    position: absolute;
+    top: 37%;
+    left: -5%;
+    width: 10rem;
+    height: 10rem;
+    background: #B3FFAB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top left, #1169b6, #1badd7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top left, #1169b6, #1badd7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 100%; }
+  .landing__bg-circle--2 {
+    z-index: 10;
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    width: 3rem;
+    height: 3rem;
+    background: #6aff7f;
+    border-radius: 100%; }
+  .landing__title {
+    z-index: 10000;
+    position: absolute;
+    top: 47%;
+    left: 20%;
+    transform: translateY(-50%); }
+    .landing__title--sub {
+      font-family: "Barlow", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+      text-transform: uppercase;
+      color: #fff;
+      width: 33rem;
+      letter-spacing: .5rem;
+      background-color: #1b2550;
+      height: 100%;
+      padding-left: .5rem;
+      display: flex;
+      align-items: center; }
+      .landing__title--sub span {
+        width: 76%;
+        display: block; }
+      .landing__title--sub-brick-1 {
+        height: 2.4rem;
+        width: 3%;
+        background-color: #33cbcc; }
+      .landing__title--sub-brick-2 {
+        height: 2.4rem;
+        width: 21%;
+        background-color: #6aff7f; }
+    .landing__title--main {
+      font-family: "Barlow", sans-serif;
+      font-weight: 900;
+      font-size: 6rem;
+      text-transform: uppercase; }
+
+.dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background: linear-gradient(to right, #1b2550 33%, #33cbcc 33%, #33cbcc 66%, #6aff7f 66%);
+  position: absolute;
+  top: 77%;
+  left: 101%; }
+
+.nav {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  position: fixed;
+  z-index: 100000;
+  align-items: center; }
+  .nav__logo {
+    margin-left: 2rem; }
+  .nav__items {
+    margin-left: auto;
+    margin-right: 1rem; }
+    .nav__items a {
+      text-decoration: none;
+      color: #606372;
+      text-transform: uppercase;
+      font-family: "Barlow", sans-serif;
+      text-decoration-color: #1b2550;
+      transition: all 1s; }
+      .nav__items a:hover {
+        text-decoration: line-through; }
+      .nav__items a:not(:last-child) {
+        margin-right: .8rem; }
+  .nav__social {
+    margin-right: 2rem; }
+    .nav__social svg {
+      fill: "Barlow", sans-serif;
+      height: 1rem;
+      width: 1rem;
+      cursor: pointer; }
+      .nav__social svg:not(:last-child) {
+        margin-right: .6rem; }

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,900|Roboto:400,500');
+
+$main-title-font: 'Barlow', sans-serif;
+
+$color-white: #fff;
+$color-blue-dark: #1b2550;
+$color-blue-neon: #33cbcc;
+$color-green-neon: #6aff7f;
+
+$color-grey-light: #606372;
+html{
+    font-size: 70%;
+}
+
+body{
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+@import "reset";
+@import "landing";
+@import "nav";
