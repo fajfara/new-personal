@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,700,900|Roboto:400,500');
 
 $main-title-font: 'Barlow', sans-serif;
+$sub-title-font: 'Roboto', sans-serif;
 
 $color-white: #fff;
 $color-blue-dark: #1b2550;
 $color-blue-neon: #33cbcc;
 $color-green-neon: #6aff7f;
+$color-purple-dark: #261f81;
+$color-purple-light: #c15187;
 
 $color-grey-light: #606372;
 html{
@@ -21,4 +24,6 @@ body{
 
 @import "reset";
 @import "landing";
+@import "about";
 @import "nav";
+@import "utilities";

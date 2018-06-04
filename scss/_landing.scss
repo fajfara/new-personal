@@ -1,5 +1,5 @@
 .landing{
-    height: 100vw;
+    height: 100vh;
 
     &__bg-circle{
         &--1{
@@ -25,8 +25,14 @@
             background: #6aff7f;
             border-radius: 100%;
         }
+    }
 
-
+    &__svg-bg{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        height: 20rem;
+        width: 20rem;
     }
 
     &__title {

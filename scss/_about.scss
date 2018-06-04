@@ -1,0 +1,17 @@
+.about{
+    height: 100vh;
+    text-align: center;
+    padding-top: 10rem;
+    &__heading--main{
+        font-size: 4rem;
+        line-height: 7rem;
+        text-transform: uppercase;
+        font-family: $main-title-font;
+        font-weight: 700;
+    }
+
+    &__heading--subtitle{
+        font-size: 2rem;
+        font-family: $sub-title-font;
+    }
+}
