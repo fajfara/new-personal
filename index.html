@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anže Fajfar</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,8 +17,8 @@
             <img src="http://via.placeholder.com/100x60" alt="logo">
         </div>
         <div class="nav__items ">
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="#landing">Home</a>
+            <a href="#about">About</a>
             <a href="#">Portfolio</a>
             <a href="#">Contact</a>
         </div>
@@ -37,7 +41,7 @@
     </div>
 
 
-    <div class="landing">
+    <div class="landing" id="landing">
         <div class="landing__bg-circle--1">
 
         </div>
@@ -105,7 +109,7 @@
 
         <div class="landing__title">
             <div class="landing__title--sub">
-                <span>Tehnik računalništva</span>
+                <span>Front end developer</span>
                 <div class="landing__title--sub-brick-1"></div>
                 <div class="landing__title--sub-brick-2"></div>
             </div>
@@ -119,9 +123,43 @@
     </div>
 
 
-    <div class="about">
-        <h1 class="about__heading--main">Welcome to my website!</h1>
+    <div class="about" id="about">
+        <h1 class="about__heading--main">Hello!</h1>
         <h2 class="about__heading--subtitle">Let me introduce myself,</h2>
+    
+        <div class="about__content">
+            <p class="about__content--first-text">
+                My name is Anze. I am a self taught programmer, currently 
+                working in front-end with the end goal of becoming a full 
+                stack developer. I like programming, music and windows. 
+                But not the OS ones.
+            </p>
+
+            <div class="about__content--heading1">
+                My skills:
+            </div>
+
+            <div class="about__content--codestatsLink">
+                <p>Stats taken from: </p>
+                <a href="https://codestats.net/users/fajfara">Codestats</a>
+            </div>
+
+
+            <div class="about__content--chart">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="about__content--githubHeading">
+                <span> Last but not least, link to my Github profile: </span>
+                <a href="https://github.com/fajfara">Github</a>
+            </div>
+        </div>
+    
     </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/codeChart.js"></script>
 </body>
 </html>

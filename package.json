@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.9.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.3.1"
   }
 }
