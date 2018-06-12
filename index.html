@@ -12,31 +12,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__logo">
+    <nav class="nav" id="nav-items">
+        <div class="nav__logo" id="logo">
             <img src="http://via.placeholder.com/100x60" alt="logo">
         </div>
-        <div class="nav__items ">
+        <div class="nav__items " >
             <a href="#landing">Home</a>
             <a href="#about">About</a>
             <a href="#">Portfolio</a>
             <a href="#">Contact</a>
         </div>
         <div class="nav__social">
-            <svg class="nav__social--github">
-                <use xlink:href="img/icons.svg#icon-github"></use>
-            </svg>
-            <svg class="nav__social--github">
-                <use xlink:href="img/icons.svg#icon-linkedin"></use>
-            </svg>
-            <svg class="nav__social--github">
-                <use xlink:href="img/icons.svg#icon-facebook2"></use>
-            </svg>
+            <a href="https://github.com/fajfara">
+                <svg class="nav__social--github">
+                    <use xlink:href="img/icons.svg#icon-github"></use>
+                </svg>
+            </a>
+
+            <a href="https://si.linkedin.com/in/an%C5%BEe-fajfar">
+                <svg class="nav__social--github">
+                    <use xlink:href="img/icons.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+
+            <a href="https://www.facebook.com/anze.fajfar">
+                <svg class="nav__social--github">
+                    <use xlink:href="img/icons.svg#icon-facebook2"></use>
+                </svg>
+            </a>
+            
+            
+            
+            
         </div>
         
     </nav>
 
-    <div class="nav-background">
+    <div class="nav-background" id="nav">
 
     </div>
 
@@ -157,9 +169,64 @@
     
     </div>
 
+    <div class="showcase" id="showcase">
+        <div class="showcase__title">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="showcase__item">
+            <div class="showcase__item--main-title">
+                <a href="https://fajfara.github.io/quote-machine/">
+                    <h1 class="heading">
+                        Random Quote Generator
+                    </h1>
+                    <img class="showcase__image" id="image-1" src="img/RQM-BG.jpg" alt="">
+                    <span class="showcase__item--subtitle" data-hover="( fajfara.github.io)">Random Quote Generator</span>
+                </a>
+            </div>
+            
+        </div>
+        <div class="showcase__item">
+            <div class="showcase__item--main-title">
+                <a href="https://fajfara.github.io/weather-app/">
+                    <h1 class="heading">
+                        Weather App
+                    </h1>
+                    <img class="showcase__image" id="image-2" src="img/weather-app.jpg" alt="weather-app">
+                    <span class="showcase__item--subtitle fix-weather" data-hover="( fajfara.github.io )">Weather app</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="showcase__item">
+            <div class="showcase__item--main-title">
+                <a href="https://fajfara.github.io/wikipedia-viewer/">
+                    <h1 class="heading">
+                        Wiki View
+                    </h1>
+                    <img class="showcase__image" id="image-2" src="img/wikiView.jpg" alt="wiki-view">
+                    <span class="showcase__item--subtitle fix-wiki" data-hover="( fajfara.github.io )">Wiki View</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="showcase__item">
+            <div class="showcase__item--main-title">
+                <a href="https://fajfara.github.io/drum-beats/">
+                    <h1 class="heading">
+                        Drum beats
+                    </h1>
+                    <img class="showcase__image" id="image-2" src="img/drum-beats.jpg" alt="drum-beats">
+                    <span class="showcase__item--subtitle fix-wiki" data-hover="( fajfara.github.io )">Wiki View</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src="js/codeChart.js"></script>
+    <script src="js/navShrink.js"></script>
 </body>
 </html>

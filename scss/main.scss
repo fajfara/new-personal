@@ -17,8 +17,10 @@ html{
     font-size: 70%;
 }
 
+@import "animations";
 @import "reset";
 @import "landing";
 @import "nav";
 @import "utilities";
 @import "about";
+@import "showcase";
