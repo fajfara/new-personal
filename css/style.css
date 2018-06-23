@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,700,900|Roboto:400,500");
 html {
-  font-size: 70%; }
+  font-size: 70%;
+  font-family: "Barlow", sans-serif; }
 
 @-webkit-keyframes fromLeft {
   0% {
@@ -163,7 +164,9 @@ table {
   padding: 2rem;
   position: fixed;
   z-index: 99000;
-  background-color: rgba(255, 255, 255, 0.849); }
+  background-color: rgba(255, 255, 255, 0.849);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 .nav {
   width: 100%;
@@ -250,6 +253,8 @@ table {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
   background-attachment: fixed;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
   .about__heading--main {
     font-size: 4rem;
@@ -417,3 +422,74 @@ table {
 .heading:hover ~ .showcase__item--subtitle::after {
   content: attr(data-hover);
   font-size: 1.5rem; }
+
+.contacts {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+  background-attachment: fixed;
+  position: relative;
+  font-family: "Barlow", sans-serif; }
+  .contacts__title h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white;
+    width: 40rem;
+    margin: 0 auto;
+    padding: 1rem; }
+  .contacts__subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: .5rem;
+    background-color: #1b2550;
+    width: 10rem;
+    margin: 0 auto; }
+  .contacts__email {
+    margin-top: .9rem;
+    margin-bottom: 2rem; }
+    .contacts__email span {
+      font-size: 2rem;
+      font-weight: 700; }
+    .contacts__email p {
+      font-family: "Roboto", sans-serif;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: .5rem;
+      position: relative; }
+      .contacts__email p::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1.2rem;
+        height: 1px;
+        width: 23%;
+        border-bottom: solid 3px rgba(0, 0, 0, 0.432); }
+  .contacts .orTitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: .5rem;
+    background-color: #1b2550;
+    width: 10rem;
+    margin: 0 auto; }
+  .contacts__socialMedia {
+    margin-top: 2rem; }
+    .contacts__socialMedia h1 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem; }
+    .contacts__socialMedia a i {
+      width: 4rem;
+      color: black;
+      font-size: 2rem;
+      transition: all .3s; }
+      .contacts__socialMedia a i:hover {
+        transform: scale(1.7) rotate(-20deg);
+        color: #33cbcc; }

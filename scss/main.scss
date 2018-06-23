@@ -15,6 +15,7 @@ $color-yellow-neon: rgb(243,243,21);
 $color-grey-light: #606372;
 html{
     font-size: 70%;
+    font-family: $main-title-font;
 }
 
 @import "animations";
@@ -24,3 +25,4 @@ html{
 @import "utilities";
 @import "about";
 @import "showcase";
+@import "contacts";
