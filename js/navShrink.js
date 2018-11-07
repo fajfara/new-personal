@@ -6,7 +6,7 @@ var Logo = document.getElementById("logo");
 window.addEventListener('scroll', function() {
     scrollPos = window.scrollY;
     console.log(scrollPos);
-    if(scrollPos > 499){
+    if(scrollPos > 359){
         navBg.classList.remove("hide");
         navBg.classList.add("show");
         navItems.classList.add("shrink");
@@ -18,7 +18,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     scrollPos = window.scrollY;
     console.log(scrollPos);
-    if(scrollPos < 499){
+    if(scrollPos < 359){
         navBg.classList.remove("show");
         navBg.classList.add("hide");
         navItems.classList.remove("shrink");
